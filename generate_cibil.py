@@ -24,8 +24,8 @@ def get_firefox_driver():
 def get_cibil_website():
     browser = get_firefox_driver()
     browser.get("https://consumer.cibil.com")
-    browser.find_element_by_name('username').send_keys('BN01110222_1937')
-    browser.find_element_by_name('psd').send_keys('Password@456789')
+    browser.find_element_by_name('username').send_keys('')
+    browser.find_element_by_name('psd').send_keys('')
     login = browser.find_element_by_name('submit').click()
     return browser
 
